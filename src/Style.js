@@ -7,6 +7,15 @@ export const Main = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .selected {
+    background: blue;
+  }
+
+  .pointernotallowed {
+    cursor:not-allowed
+  }
+
 `
 
 export const Container = styled.div`
@@ -32,25 +41,17 @@ export const BoxDia = styled.button`
   align-content:row;
   border-radius:5px;
   color:#000000;
-  padding:5px;
   text-align:center;
-  width:40px;
+  width:60px;
   font-size:10px;
   background:#ffffff;
+  padding:10px;
 
-`
+  &:hover {
+    background: ${darken(0.10, "#ffffff")};
+  }
 
-export const BoxDia2 = styled.button`
-  border: 1px solid #000;
-  margin:5px;
-  align-content:row;
-  border-radius:5px;
-  color:#000000;
-  padding:5px;
-  text-align:center;
-  width:70px;
-  font-size:10px;
-  background:#ffffff;
+
 `
 
 export const BoxMain = styled.div`
