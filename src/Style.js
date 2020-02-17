@@ -42,7 +42,7 @@ export const BoxDia = styled.button`
   border-radius:5px;
   color:#000000;
   text-align:center;
-  width:60px;
+  width:20%;
   font-size:10px;
   background:#ffffff;
   padding:10px;
